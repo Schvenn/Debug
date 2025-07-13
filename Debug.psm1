@@ -58,6 +58,9 @@ else {$lastline = "(Unable to determine previous line)"}
 Write-Host -f green "DEBUG: Last line of code:"; wordwrap "$lastline"
 line cyan
 ""; Read-Host}}
+
+Export-ModuleMember -Function debug
+
 <#
 ## Overview
 This function is designed to be used inside other functions during development, such that errors can be tracked down and corrected.
